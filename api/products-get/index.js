@@ -4,6 +4,7 @@ const data = require('../shared/product-data');
 // stuck on published staging branch build
 module.exports = async function (context, req) {
   try {
+    const junk = 1;
     const products = data.getProducts();
     context.res.status(200).json(products);
   } catch (error) {
